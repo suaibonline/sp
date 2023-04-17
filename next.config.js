@@ -5,3 +5,12 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+= {
+  exportPathMap: async function (defaultPathMap) {
+    return {
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+      '/contact': { page: '/contact' },
+    }
+  },
+}
